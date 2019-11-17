@@ -7,10 +7,9 @@
 
 
 
-
-
-
-
+shape::shape()
+{
+}
 
 shape::shape(std::string coloure)
 {

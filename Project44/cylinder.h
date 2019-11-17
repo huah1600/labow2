@@ -3,21 +3,25 @@
 #include <string>
 #include <iostream>
 #include <stdio.h>
+#include "Circle.h"
 
-
-class cylinder
-
+class cylinder: public Circle
 {
 public:
-	cylinder(std::string coloure);
-	std::string get_colour();
-	virtual double get_area() = 0;
+	
 
+	cylinder(double _radius, double  _height);
+	cylinder(double _radius,std::string colour ,double  _height);
+
+	double get_area();
+	double get_volym();
+	double get_height();
 
 
 private:
 
-	std::string colour;
+	
+	double height;
 
 };
 

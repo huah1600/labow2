@@ -11,7 +11,7 @@ class Circle : public shape
 {
 public:
 
-
+	Circle(double _radius);
 	Circle(double _radius, std::string _colour);
 
 	double get_area();

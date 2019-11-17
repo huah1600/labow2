@@ -9,6 +9,7 @@ class shape
 
 {
 public:
+	shape();
 	shape(std::string coloure);
 	std::string get_colour();
 	virtual double get_area() = 0;

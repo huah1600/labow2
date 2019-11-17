@@ -2,16 +2,30 @@
 
 
 
-cylinder::cylinder(std::string coloure)
+
+
+cylinder::cylinder(double _radius, double _height):	
+Circle(_radius),height(_height)
+{}
+
+cylinder::cylinder(double _radius, std::string _colour, double _height):
+	Circle(_radius,_colour),height(_height)
+{}
+
+
+double cylinder::get_volym()
 {
+	return Circle::get_area() * height;
 }
 
-std::string cylinder::get_colour()
-{
-	return std::string();
+double cylinder::get_height(){
+
+	return height;
+
 }
 
 double cylinder::get_area()
 {
-	return 0.0;
+	return Circle::get_area() * height;
 }
+
