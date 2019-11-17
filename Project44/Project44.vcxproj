@@ -125,12 +125,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Circle.cpp" />
+    <ClCompile Include="cylinder.cpp" />
     <ClCompile Include="rectangel.cpp" />
     <ClCompile Include="shape.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Circle.h" />
+    <ClInclude Include="cylinder.h" />
     <ClInclude Include="rectangel.h" />
     <ClInclude Include="shape.h" />
   </ItemGroup>
