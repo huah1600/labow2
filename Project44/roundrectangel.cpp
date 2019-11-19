@@ -8,3 +8,7 @@ double Roundrectangel::get_area()
 {
 	return Rectangel::get_area()* corner_radius*(Rectangel::get_length()+ Rectangel::get_width())+pi* corner_radius* corner_radius;
 }
+
+Roundrectangel::~Roundrectangel()
+{
+}

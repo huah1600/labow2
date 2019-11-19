@@ -14,7 +14,7 @@ public:
 	//cylinder(double _radius, std::string colour, double  _height);
 
 	double get_area();
-
+	~Roundrectangel();
 
 
 

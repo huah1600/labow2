@@ -126,6 +126,7 @@
   <ItemGroup>
     <ClCompile Include="Circle.cpp" />
     <ClCompile Include="cylinder.cpp" />
+    <ClCompile Include="Parallelepiped.cpp" />
     <ClCompile Include="rectangel.cpp" />
     <ClCompile Include="roundrectangel.cpp" />
     <ClCompile Include="shape.cpp" />
@@ -134,6 +135,7 @@
   <ItemGroup>
     <ClInclude Include="Circle.h" />
     <ClInclude Include="cylinder.h" />
+    <ClInclude Include="Parallelepiped.h" />
     <ClInclude Include="rectangel.h" />
     <ClInclude Include="roundrectangel.h" />
     <ClInclude Include="shape.h" />
