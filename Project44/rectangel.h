@@ -18,7 +18,7 @@ public:
 	double get_area();
 	double get_length();
 	double get_width();
-
+	~Rectangel();
 
 
 

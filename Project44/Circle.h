@@ -16,7 +16,7 @@ public:
 
 	double get_area();
 
-
+	~Circle();
 
 
 

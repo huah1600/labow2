@@ -16,7 +16,7 @@ public:
 	double get_area();
 	double get_volym();
 	double get_height();
-
+	~cylinder();
 
 private:
 

@@ -17,6 +17,10 @@ double Rectangel::get_width()
 	return width;
 }
 
+Rectangel::~Rectangel()
+{
+}
+
 double Rectangel::get_area()
 {
 	return width * length;

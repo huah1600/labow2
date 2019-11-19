@@ -26,8 +26,12 @@ double cylinder::get_height(){
 }
 
 
+
 double cylinder::get_area()
 {
 	return Circle::get_area() * height;
 }
 
+cylinder::~cylinder()
+{
+}

@@ -7,9 +7,6 @@
 
 
 
-shape::shape()
-{
-}
 
 shape::shape(std::string coloure)
 {
@@ -19,4 +16,12 @@ shape::shape(std::string coloure)
 std::string shape::get_colour()
 {
 	return colour;
+}
+
+shape::~shape()
+{
+}
+
+shape::shape()
+{
 }

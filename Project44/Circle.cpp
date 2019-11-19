@@ -19,3 +19,7 @@ double Circle::get_area()
 
 	return   PI * radius*radius;
 }
+
+Circle::~Circle()
+{
+}
