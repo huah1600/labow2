@@ -10,36 +10,32 @@
 #include <vector>
 using namespace std;
 
-void getData(std::vector<std::unique_ptr<shape>>& ptrs);
+void getData(std::vector<*shape> shapes);
 
 
 int main()
 
 {
 
-	std::vector<std::unique_ptr<shape>> pointers;
 
-	pointers.push_back(std::make_unique< Rectangel>(5, 7, "Green"));
+	std::vector<*shape> shapes;
+	shapes.push_back(new Rectangel(4, 5, "purple")); //Lägger till en rektangel
+
 	
-	//pointers.push_back(std::make_unique< cylinder>(5, "red",7 ));
-	getData(pointers);
-	/*
-	pointers.push_back(std::make_unique<Circle>(7, "Yellow"));
+	getData(shapes);
 	
-	pointers.push_back(std::make_unique<Roundrectangel>(8, 6, 2, "Blue"));
-	pointers.push_back(std::make_unique<Parallelepiped>(2, 4, 6, "red"));
-	getData(pointers);
-	*/
 	system("pause");
 	return 0;
 }
 
 
-void getData(std::vector<std::unique_ptr<shape>>& ptrs) {
-	for (int i = 0; i < ptrs.size(); i++) {
-		shape& pointerIndex = *ptrs[i];
-		std::cout << "Area of " << typeid(pointerIndex).name() << " is "
-			<< ptrs[i]->get_area() << " cm, and has the colour " << ptrs[i]->get_colour() << '\n';
+void getData(std::vector<*shape>shapes) {
+	for (int i = 0; i < shapes.size(); i++) {
+
+		double totalarea = 0;
+		shape& pointerIndex = *shapes[i];
+		totalarea=totalarea + *shapes[i];
+		std::cout << "Area of " << typeid(pointerIndex).name() << " is "<< shapes[i]->get_area() << " cm, and has the colour " << shapes[i]->get_colour() << '\n';
 	}
 }
 
